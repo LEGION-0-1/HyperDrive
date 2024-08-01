@@ -3,19 +3,19 @@ body {
 	color: black;
 	font-size: 25px;
     height: 100vh;
-    display: grid;
     place-items: center;
     margin:0;
+    padding:0;
 }
 
 header{
-    background:#003366;
+    background:rgba(0,0,0,50%);
     width:100vw;
     height:10vh;
     display:flex;
     align-items: center;
     justify-content: center;
-    color:#FFFFFF;
+    color:#000;
     font-family: "JetBrains Mono", monospace;
 }
 
@@ -33,12 +33,11 @@ header{
 .dark-mode {
 	background-color: black;
 	color: white;
-    .fa-circle-half-stroke{
+    .fa-circle-half-stroke,.name{
         color: white;
     }
     header{
-        background:#1C1C1C;
-        color:#4F4F4F;
+        background:rgba(255,255,255,50%);
     }
 }
 
