@@ -1,11 +1,33 @@
 body {
-	padding: 25px;
 	background-color: white;
 	color: black;
 	font-size: 25px;
     height: 100vh;
     display: grid;
     place-items: center;
+    margin:0;
+}
+
+header{
+    background:#003366;
+    width:100vw;
+    height:10vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:#FFFFFF;
+    font-family: "JetBrains Mono", monospace;
+}
+
+.name{
+    margin:0 auto;
+    font-size:75px;
+}
+
+.navbar{
+    width:100vw;
+    display:flex;
+    align-items: center;
 }
 
 .dark-mode {
@@ -14,17 +36,21 @@ body {
     .fa-circle-half-stroke{
         color: white;
     }
+    header{
+        background:#1C1C1C;
+        color:#4F4F4F;
+    }
 }
 
 .btn{
-    font-size: 50px;
+    font-size: 75px;
     border: none;
+    margin: 0 auto;
     background: transparent;
     color: black;
     border-radius: 50%;
     cursor: pointer;
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 30px;
     height: 30px;
