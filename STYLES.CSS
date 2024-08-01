@@ -1,0 +1,31 @@
+body {
+	padding: 25px;
+	background-color: white;
+	color: black;
+	font-size: 25px;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.dark-mode {
+	background-color: black;
+	color: white;
+    .fa-circle-half-stroke{
+        color: white;
+    }
+}
+
+.btn{
+    font-size: 50px;
+    border: none;
+    background: transparent;
+    color: black;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
