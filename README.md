@@ -1,4 +1,4 @@
 # HYPERDRIVE
-A website feautring the fastest cars
+A website featuring the fastest cars
 
 Author: DIlpreet Singh aka LEGION
