@@ -55,8 +55,21 @@ header{
     height: 30px;
 }
 
+.main{
+    margin:0 100px;
+}
+
 .heading{
     display:flex;
     justify-content: center;
     align-items: center;
+    font-size: 100px;
+}
+
+.heading, .sub-heading{
+    font-family:"Oswald", sans-serif;
+}
+
+.sub-heading{
+    font-size:50px;
 }
