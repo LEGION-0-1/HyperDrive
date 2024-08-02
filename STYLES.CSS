@@ -31,7 +31,7 @@ header{
 }
 
 .dark-mode {
-	background-color: black;
+	background-color: #121212;
 	color: white;
     .fa-circle-half-stroke,.name{
         color: white;
@@ -53,4 +53,10 @@ header{
     align-items: center;
     width: 30px;
     height: 30px;
+}
+
+.heading{
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
