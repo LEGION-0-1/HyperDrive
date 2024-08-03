@@ -65,10 +65,10 @@ header{
     margin:0 100px;
 }
 
-.list{
+.cars{
     display:flex;
     justify-content: center;
-    list-style: none;
+    list-style-type: none;
 }
 
 .heading{
