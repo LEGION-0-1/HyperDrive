@@ -39,6 +39,9 @@ header{
     header{
         background:rgba(255,255,255,50%);
     }
+    .contents:hover .container{
+        background: white;
+    }
 }
 
 .btn{
@@ -74,7 +77,93 @@ header{
     font-size:50px;
 }
 
-.content{
+.para{
     font-size:30px;
     font-family: "Roboto", sans-serif;
+}
+
+.container{
+    width: 1000px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    transition: width 2s ease-in-out, background-color 12s ease-in-out, border-radius 6s ease-in-out;
+    border-radius: 100%;
+}
+
+.contents{
+    display:flex;
+}
+
+.content{
+    width: 500px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0px;
+    opacity: 0;
+    position: fixed;
+    color: #fff;
+    overflow: hidden;
+    transition: opacity 2s ease-in-out, font-size 2s ease-in-out, color 8s ease-in-out;
+    word-wrap: normal;
+}
+
+.car{
+    transform: translateX(0px);
+}
+
+.contents:hover .car{
+    animation: float 4s ease-in-out 2;
+}
+
+.logo_cont{
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 500px;
+    opacity: 0;
+    transition: opacity 12s ease-in-out;
+}
+
+.contents:hover .container{
+    width: 1000px;
+    background-color: rgba(0,0,0,75%);
+    border-radius: 20px;
+}
+
+.contents:hover .content{
+    opacity: 1;
+    font-size: 24px;
+    color: black;
+}
+
+.contents:hover .logo_cont{
+    left: 25%;
+    opacity: 1;
+}
+
+.contents:hover .logo{
+    opacity: 0.25;
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(0px);
+    }
+
+    25%{
+        transform: translateY(-30px);
+    }
+
+    75%{
+        transform: translateY(30px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
 }
