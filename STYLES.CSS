@@ -42,6 +42,9 @@ header{
     .contents:hover .container{
         background: white;
     }
+    .contents:hover .content{
+        color:black;
+    }
 }
 
 .btn{
@@ -60,6 +63,12 @@ header{
 
 .main, .list{
     margin:0 100px;
+}
+
+.list{
+    display:flex;
+    justify-content: center;
+    list-style: none;
 }
 
 .heading{
@@ -83,20 +92,16 @@ header{
 }
 
 .container{
-    width: 1000px;
-    height: 350px;
+    width: 50vw;
+    height: 95vh;
     display: flex;
-    justify-content: center;
+    align-items: center;
     transition: width 2s ease-in-out, background-color 12s ease-in-out, border-radius 6s ease-in-out;
     border-radius: 100%;
 }
 
-.contents{
-    display:flex;
-}
-
 .content{
-    width: 500px;
+    width: 1000px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 0px;
     opacity: 0;
@@ -108,6 +113,7 @@ header{
 }
 
 .car{
+    width: 1000px;
     transform: translateX(0px);
 }
 
@@ -124,21 +130,15 @@ header{
 }
 
 .logo{
-    width: 500px;
+    width: 1000px;
     opacity: 0;
     transition: opacity 12s ease-in-out;
 }
 
 .contents:hover .container{
-    width: 1000px;
-    background-color: rgba(0,0,0,75%);
-    border-radius: 20px;
-}
-
-.contents:hover .content{
-    opacity: 1;
-    font-size: 24px;
-    color: black;
+    width: 90vw;
+    background-color: rgba(0,0,0,60%);
+    border-radius: 40px;
 }
 
 .contents:hover .logo_cont{
