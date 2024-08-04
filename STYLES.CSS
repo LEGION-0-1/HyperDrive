@@ -58,6 +58,23 @@ header{
     height:30px;
 }
 
+.progress{
+    position: fixed;
+    top: 0;
+    left:0;
+    z-index: 9999;
+    width:100%;
+    height: 5px;
+    background: #2c2c2c;
+}
+
+.bar{
+    display: block;
+    width:0;
+    height: inherit;
+    background: linear-gradient(90deg, #33ffbb, #31acff, #2ad39f, #0170f0);
+}
+
 .main,.list{
     margin:0 100px;
 }
@@ -110,10 +127,15 @@ header{
 }
 
 .car{
+    width:1300px;
+    height:731px;
     transform:translateX(0px);
+    transition: width 2s ease-in-out, height 2s ease-in-out;
 }
 
 .contents:hover .car{
+    width:670px;
+    height:330px;
     animation:float 4s ease-in-out 2;
 }
 
@@ -126,7 +148,7 @@ header{
 }
 
 .logo{
-    width:1000px;
+    width:0px;
     opacity:0;
     transition:opacity 12s ease-in-out;
 }
@@ -143,6 +165,7 @@ header{
 }
 
 .contents:hover .logo{
+    width:1000px;
     opacity:0.25;
 }
 
