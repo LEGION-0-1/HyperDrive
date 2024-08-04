@@ -60,17 +60,18 @@ header{
 
 .progress{
     position: fixed;
-    top: 0;
+    top:0;
     left:0;
-    z-index: 9999;
+    z-index:9999;
     width:100%;
-    height: 5px;
+    height:10px;
     background: #2c2c2c;
 }
 
 .bar{
     display: block;
     width:0;
+    border-radius:5px;
     height: inherit;
     background: linear-gradient(90deg, #33ffbb, #31acff, #2ad39f, #0170f0);
 }
@@ -114,16 +115,18 @@ header{
     border-radius:100%;
 }
 
-.content{
-    width:1000px;
-    font-family:'Times New Roman', Times, serif;
-    font-size:0px;
+.more{
+    border-style: none;
+    padding:7px;
+    border-radius: 10px;
     opacity:0;
-    position:fixed;
-    color:#fff;
-    overflow:hidden;
-    transition:opacity 2s ease-in-out, font-size 2s ease-in-out, color 8s ease-in-out;
-    word-wrap:normal;
+    width:0;
+    transition:opacity 10s ease-in-out, width 10s ease-in-out;
+}
+
+.contents:hover .more{
+    opacity:1;
+    width:175%;
 }
 
 .car{
@@ -140,6 +143,7 @@ header{
 }
 
 .logo_cont{
+    width:500px;
     opacity:0;
     transition:opacity 2s ease-in-out;
     display:flex;
@@ -150,7 +154,7 @@ header{
 .logo{
     width:0px;
     opacity:0;
-    transition:opacity 12s ease-in-out;
+    transition:opacity 10s ease-in-out, width 10s ease-in-out;
 }
 
 .contents:hover .container{
