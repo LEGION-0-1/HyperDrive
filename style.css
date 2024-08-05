@@ -139,6 +139,7 @@ header{
 .car{
     width:1300px;
     height:731px;
+    z-index:1;
     transform:translateX(0px);
     transition: width 2s ease-in-out, height 2s ease-in-out;
 }
@@ -152,6 +153,7 @@ header{
 .logo_cont{
     width:400px;
     opacity:0;
+    z-index:0;
     transition:opacity 2s ease-in-out;
     display:flex;
     justify-content:center;
