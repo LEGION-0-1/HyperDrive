@@ -118,6 +118,7 @@ header{
 .content{
     opacity:0;
     transition:opacity 10s ease-in-out;
+    margin-right: 20px;
 }
 
 .contents:hover .content{
