@@ -62,7 +62,7 @@ header{
 }
 
 .progress{
-    position: fixed;
+    position:fixed;
     top:0;
     left:0;
     z-index:9999;
@@ -80,7 +80,7 @@ header{
 }
 
 .main,.list{
-    margin:0 1vw;
+    margin:0 auto;
 }
 
 .cars{
@@ -110,7 +110,7 @@ header{
 }
 
 .container{
-    width:50vw;
+    width:65vw;
     height:95vh;
     display:flex;
     align-items:center;
@@ -118,14 +118,24 @@ header{
     border-radius:100%;
 }
 
+.contents:hover .container{
+    width:90vw;
+    background:radial-gradient(#fff,rgba(0,0,0,60%));
+    border-radius:40px;
+}
+
 .content{
+    height:0;
+    width:0;
     opacity:0;
-    transition:opacity 10s ease-in-out;
+    transition:width 4s ease-in-out;
     margin-right: 20px;
 }
 
 .contents:hover .content{
     opacity:1;
+    width: 670px;
+    height:auto;
 }
 
 .more{
@@ -170,12 +180,6 @@ header{
     transition:opacity 10s ease-in-out, width 10s ease-in-out;
 }
 
-.contents:hover .container{
-    width:90vw;
-    background:radial-gradient(#fff,rgba(0,0,0,60%));
-    border-radius:40px;
-}
-
 .contents:hover .logo_cont{
     left:25%;
     opacity:1;
@@ -208,4 +212,10 @@ footer{
     display:flex;
     justify-content:center;
     align-items:center;
+    width:100vw;
+    height:40vh;
+}
+
+.area{
+    margin:0 auto;
 }
