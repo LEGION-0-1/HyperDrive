@@ -8,8 +8,11 @@ body {
     padding:0;
 }
 
-header{
+header, footer{
     background:rgba(0,0,0,50%);
+}
+
+header{
     width:100vw;
     height:10vh;
     display:flex;
@@ -36,7 +39,7 @@ header{
     .fa-circle-half-stroke,.name{
         color:white;
     }
-    header{
+    header, footer{
         background:rgba(255,255,255,50%);
     }
     .contents:hover .container{
@@ -199,4 +202,10 @@ header{
     100%{
         transform:translateY(0px);
     }
+}
+
+footer{
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
