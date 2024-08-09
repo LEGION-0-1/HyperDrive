@@ -80,7 +80,7 @@ header{
 }
 
 .main,.list{
-    margin:0 auto;
+    margin:0 2.5vh;
 }
 
 .cars{
@@ -96,7 +96,7 @@ header{
     font-size:100px;
 }
 
-h1, .heading,.sub-heading{
+h1, h2, h3, .heading,.sub-heading{
     font-family:"Oswald",sans-serif;
 }
 
@@ -104,9 +104,11 @@ h1, .heading,.sub-heading{
     font-size:50px;
 }
 
-p, .para{
-    font-size:30px;
+p{
     font-family:"Roboto",sans-serif;
+    .para{
+        font-size:30px;
+    }
 }
 
 .container{
@@ -214,8 +216,13 @@ footer{
     align-items:center;
     width:100vw;
     height:40vh;
+    i{
+        font-size:100px;
+        color:#000;
+    }
 }
 
 .area{
     margin:0 auto;
+    font-size:40px;
 }
