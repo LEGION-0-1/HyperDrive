@@ -96,7 +96,7 @@ header{
     font-size:100px;
 }
 
-.heading,.sub-heading{
+h1, .heading,.sub-heading{
     font-family:"Oswald",sans-serif;
 }
 
@@ -104,7 +104,7 @@ header{
     font-size:50px;
 }
 
-.para{
+p, .para{
     font-size:30px;
     font-family:"Roboto",sans-serif;
 }
