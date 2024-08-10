@@ -13,6 +13,7 @@ header, footer{
 }
 
 header{
+    z-index:99;
     width:100vw;
     height:10vh;
     position:fixed;
@@ -47,6 +48,9 @@ header{
     }
     .contents:hover .container{
         background:radial-gradient(#fff,rgba(255,255,255,25%));
+    }
+    .content{
+        color:#000;
     }
 }
 
