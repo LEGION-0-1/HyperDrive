@@ -123,12 +123,14 @@ p{
 
 .container{
     width:65vw;
-    overflow:hidden;
     height:95vh;
     display:flex;
     align-items:center;
     transition:width 2s ease-in-out, border-radius 6s ease-in-out;
     border-radius:100%;
+    .content{
+        overflow: hidden;
+    }
 }
 
 .contents:hover .container{
@@ -141,7 +143,7 @@ p{
     height:0;
     width:0;
     opacity:0;
-    transition:width 4s ease-in-out;
+    transition:width 4s ease-in-out,opacity 8s ease-in-out;
     margin-right: 20px;
 }
 
