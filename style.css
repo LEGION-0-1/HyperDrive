@@ -123,6 +123,7 @@ p{
 
 .container{
     width:65vw;
+    overflow:hidden;
     height:95vh;
     display:flex;
     align-items:center;
@@ -223,6 +224,7 @@ footer{
     align-items:center;
     width:100vw;
     height:40vh;
+    margin:0 0 0 -17px;
     i{
         font-size:100px;
         color:#000;
