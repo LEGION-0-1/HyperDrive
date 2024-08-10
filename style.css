@@ -21,8 +21,11 @@ header{
     display:flex;
     align-items:center;
     justify-content:center;
-    color:#000;
     font-family:"JetBrains Mono",monospace;
+    h1,i{
+        mix-blend-mode:difference;
+        filter:invert(1);
+    }
 }
 
 .name{
@@ -113,9 +116,9 @@ h1, h2, h3, .heading,.sub-heading{
 
 p{
     font-family:"Roboto",sans-serif;
-    .para{
-        font-size:30px;
-    }
+}
+.para{
+    font-size:30px;
 }
 
 .container{
@@ -203,15 +206,12 @@ p{
     0%{
         transform:translateY(0px);
     }
-
     25%{
         transform:translateY(-30px);
     }
-
     75%{
         transform:translateY(30px);
     }
-
     100%{
         transform:translateY(0px);
     }
