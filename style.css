@@ -21,6 +21,7 @@ header{
     display:flex;
     align-items:center;
     justify-content:center;
+    font-size:200%;
     font-family:"JetBrains Mono",monospace;
     h1,i{
         mix-blend-mode:difference;
@@ -30,7 +31,6 @@ header{
 
 .name{
     margin:0 auto;
-    font-size:75px;
 }
 
 .navbar{
